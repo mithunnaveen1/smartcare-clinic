@@ -1,0 +1,17 @@
+test_blank_patient_name_rejected (test_starter_prototype.TestStarterPrototype.test_blank_patient_name_rejected) ... ok
+test_book_appointment_is_scheduled (test_starter_prototype.TestStarterPrototype.test_book_appointment_is_scheduled) ... ok
+test_cancel_keeps_record_and_frees_slot (test_starter_prototype.TestStarterPrototype.test_cancel_keeps_record_and_frees_slot) ... ok
+test_duplicate_booking_rejected (test_starter_prototype.TestStarterPrototype.test_duplicate_booking_rejected) ... ok
+test_known_limitation_cancel_twice_is_silent (test_starter_prototype.TestStarterPrototype.test_known_limitation_cancel_twice_is_silent)
+KNOWN LIMITATION: cancelling an already cancelled appointment succeeds. ... ok
+test_known_limitation_equivalent_times_not_detected (test_starter_prototype.TestStarterPrototype.test_known_limitation_equivalent_times_not_detected)
+KNOWN LIMITATION: '09:00' and '9:00' are treated as different slots. ... ok
+test_known_limitation_free_text_time_is_accepted (test_starter_prototype.TestStarterPrototype.test_known_limitation_free_text_time_is_accepted)
+KNOWN LIMITATION (documented in AI card): 'tomorrow' is stored as-is. ... ok
+test_search_patient_by_partial_name_case_insensitive (test_starter_prototype.TestStarterPrototype.test_search_patient_by_partial_name_case_insensitive) ... ok
+test_unknown_patient_rejected (test_starter_prototype.TestStarterPrototype.test_unknown_patient_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK
