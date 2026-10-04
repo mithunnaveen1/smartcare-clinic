@@ -1,0 +1,5 @@
+Booked: 1 SCHEDULED
+Rejected: practitioner already has an appointment at that time
+Rejected: cannot change appointment from CANCELLED to CANCELLED
+History P001: [(1, 'CANCELLED')]
+Report: {'SCHEDULED': 0, 'COMPLETED': 0, 'CANCELLED': 1}

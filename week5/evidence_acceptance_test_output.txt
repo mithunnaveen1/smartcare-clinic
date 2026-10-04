@@ -1,0 +1,18 @@
+test_AC01_successful_booking_FR05 (test_acceptance_v02.TestAcceptanceCriteria.test_AC01_successful_booking_FR05) ... ok
+test_AC02_double_booking_rejected_FR06 (test_acceptance_v02.TestAcceptanceCriteria.test_AC02_double_booking_rejected_FR06) ... ok
+test_AC03_cancel_scheduled_retains_record_FR08 (test_acceptance_v02.TestAcceptanceCriteria.test_AC03_cancel_scheduled_retains_record_FR08) ... ok
+test_AC04_cancel_already_cancelled_rejected_FR10 (test_acceptance_v02.TestAcceptanceCriteria.test_AC04_cancel_already_cancelled_rejected_FR10) ... ok
+test_AC05_patient_search_no_match_FR02 (test_acceptance_v02.TestAcceptanceCriteria.test_AC05_patient_search_no_match_FR02) ... ok
+test_AC06_practitioner_schedule_only_own_FR04 (test_acceptance_v02.TestAcceptanceCriteria.test_AC06_practitioner_schedule_only_own_FR04) ... ok
+test_FR01_duplicate_patient_id_rejected_NFR01 (test_acceptance_v02.TestOtherRequirements.test_FR01_duplicate_patient_id_rejected_NFR01) ... ok
+test_FR05_malformed_time_rejected (test_acceptance_v02.TestOtherRequirements.test_FR05_malformed_time_rejected) ... ok
+test_FR07_unknown_patient_or_practitioner_rejected (test_acceptance_v02.TestOtherRequirements.test_FR07_unknown_patient_or_practitioner_rejected) ... ok
+test_FR09_complete_scheduled_then_cannot_cancel_FR10 (test_acceptance_v02.TestOtherRequirements.test_FR09_complete_scheduled_then_cannot_cancel_FR10) ... ok
+test_FR11_history_includes_cancelled (test_acceptance_v02.TestOtherRequirements.test_FR11_history_includes_cancelled) ... ok
+test_FR12_status_report_counts (test_acceptance_v02.TestOtherRequirements.test_FR12_status_report_counts) ... ok
+test_equivalent_time_forms_now_detected_BR05 (test_acceptance_v02.TestOtherRequirements.test_equivalent_time_forms_now_detected_BR05) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.003s
+
+OK
