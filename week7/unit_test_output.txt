@@ -1,0 +1,35 @@
+test_cancel_scheduled (tests.test_domain.TestAppointment.test_cancel_scheduled) ... ok
+test_cancelled_cannot_be_completed (tests.test_domain.TestAppointment.test_cancelled_cannot_be_completed) ... ok
+test_complete_then_cancel_is_illegal (tests.test_domain.TestAppointment.test_complete_then_cancel_is_illegal) ... ok
+test_constructor_rejects_bad_arguments (tests.test_domain.TestAppointment.test_constructor_rejects_bad_arguments) ... ok
+test_illegal_repeated_cancel (tests.test_domain.TestAppointment.test_illegal_repeated_cancel) ... ok
+test_new_appointment_is_scheduled_and_active (tests.test_domain.TestAppointment.test_new_appointment_is_scheduled_and_active) ... ok
+test_no_inheritance_from_patient_or_practitioner (tests.test_domain.TestAppointment.test_no_inheritance_from_patient_or_practitioner) ... ok
+test_status_cannot_be_set_directly (tests.test_domain.TestAppointment.test_status_cannot_be_set_directly) ... ok
+test_book_generates_ids_and_schedules (tests.test_domain.TestClinic.test_book_generates_ids_and_schedules) ... ok
+test_cancel_retains_record_and_frees_slot (tests.test_domain.TestClinic.test_cancel_retains_record_and_frees_slot) ... ok
+test_cancel_twice_raises_and_unknown_id_raises (tests.test_domain.TestClinic.test_cancel_twice_raises_and_unknown_id_raises) ... ok
+test_double_booking_rejected (tests.test_domain.TestClinic.test_double_booking_rejected) ... ok
+test_duplicate_ids_rejected (tests.test_domain.TestClinic.test_duplicate_ids_rejected) ... ok
+test_empty_report_has_all_statuses (tests.test_domain.TestClinic.test_empty_report_has_all_statuses) ... ok
+test_history_includes_all_statuses (tests.test_domain.TestClinic.test_history_includes_all_statuses) ... ok
+test_same_time_different_practitioner_allowed (tests.test_domain.TestClinic.test_same_time_different_practitioner_allowed) ... ok
+test_schedule_sorted_and_only_that_practitioner (tests.test_domain.TestClinic.test_schedule_sorted_and_only_that_practitioner) ... ok
+test_search (tests.test_domain.TestClinic.test_search) ... ok
+test_status_report (tests.test_domain.TestClinic.test_status_report) ... ok
+test_unknown_patient_or_practitioner (tests.test_domain.TestClinic.test_unknown_patient_or_practitioner) ... ok
+test_blank_id_or_name_rejected (tests.test_domain.TestPatient.test_blank_id_or_name_rejected) ... ok
+test_future_birth_date_rejected (tests.test_domain.TestPatient.test_future_birth_date_rejected) ... ok
+test_invalid_phone_rejected (tests.test_domain.TestPatient.test_invalid_phone_rejected) ... ok
+test_matches_by_id_or_partial_name_case_insensitive (tests.test_domain.TestPatient.test_matches_by_id_or_partial_name_case_insensitive) ... ok
+test_state_is_read_only (tests.test_domain.TestPatient.test_state_is_read_only) ... ok
+test_valid_patient_trims_text (tests.test_domain.TestPatient.test_valid_patient_trims_text) ... ok
+test_wrong_types_rejected (tests.test_domain.TestPatient.test_wrong_types_rejected) ... ok
+test_blank_fields_rejected (tests.test_domain.TestPractitioner.test_blank_fields_rejected) ... ok
+test_read_only (tests.test_domain.TestPractitioner.test_read_only) ... ok
+test_valid_practitioner_default_specialty (tests.test_domain.TestPractitioner.test_valid_practitioner_default_specialty) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.001s
+
+OK

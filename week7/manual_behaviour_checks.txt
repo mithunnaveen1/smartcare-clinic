@@ -1,0 +1,17 @@
+--- 1. valid objects
+Patient('P001', 'Aisha Rahman') Patient('P002', 'Ben Carter') Practitioner('D01', 'Dr Mei Tanaka')
+--- 2. invalid input
+[REJECTED] blank patient name: ValueError: name must not be blank
+[REJECTED] phone 'abc': ValueError: phone may contain only digits, spaces and + - ( )
+[REJECTED] future birth date: ValueError: date_of_birth cannot be in the future
+[REJECTED] unknown patient booking: UnknownEntityError: unknown patient P999
+--- 3. booking, double booking, cancel, illegal repeat
+booked: Appointment('A0001', 'P001', 'D01', 2026-10-05 09:00, SCHEDULED)
+[REJECTED] double booking: DoubleBookingError: Dr Mei Tanaka already has an appointment at 2026-10-05 09:00
+[OK]       cancel scheduled: Appointment('A0001', 'P001', 'D01', 2026-10-05 09:00, CANCELLED)
+[REJECTED] cancel again (illegal): InvalidStatusTransitionError: cannot change appointment A0001 from CANCELLED to CANCELLED
+[REJECTED] direct status assignment: AttributeError: property 'status' of 'Appointment' object has no setter
+[OK]       rebook freed slot: Appointment('A0002', 'P002', 'D01', 2026-10-05 09:00, SCHEDULED)
+--- 4. history and report
+history P001: [Appointment('A0001', 'P001', 'D01', 2026-10-05 09:00, CANCELLED)]
+report: {'SCHEDULED': 1, 'COMPLETED': 0, 'CANCELLED': 1}

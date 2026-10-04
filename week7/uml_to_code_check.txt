@@ -1,0 +1,45 @@
+class AppointmentStatus                                      ->  AppointmentStatus                  OK
+AppointmentStatus.SCHEDULED                                  ->  AppointmentStatus.SCHEDULED        OK
+AppointmentStatus.COMPLETED                                  ->  AppointmentStatus.COMPLETED        OK
+AppointmentStatus.CANCELLED                                  ->  AppointmentStatus.CANCELLED        OK
+class SmartCareError                                         ->  SmartCareError                     OK
+SmartCareError is an Exception                               ->  SmartCareError                     OK
+class InvalidStatusTransitionError                           ->  InvalidStatusTransitionError       OK
+InvalidStatusTransitionError is an Exception                 ->  InvalidStatusTransitionError       OK
+class DoubleBookingError                                     ->  DoubleBookingError                 OK
+DoubleBookingError is an Exception                           ->  DoubleBookingError                 OK
+class UnknownEntityError                                     ->  UnknownEntityError                 OK
+UnknownEntityError is an Exception                           ->  UnknownEntityError                 OK
+class DuplicateIdError                                       ->  DuplicateIdError                   OK
+DuplicateIdError is an Exception                             ->  DuplicateIdError                   OK
+class Patient                                                ->  Patient                            OK
+Patient.patient_id (attribute)                               ->  Patient.patient_id                 OK
+Patient.name (attribute)                                     ->  Patient.name                       OK
+Patient.date_of_birth (attribute)                            ->  Patient.date_of_birth              OK
+Patient.phone (attribute)                                    ->  Patient.phone                      OK
+Patient.matches(text)                                        ->  def matches                        OK
+class Practitioner                                           ->  Practitioner                       OK
+Practitioner.practitioner_id (attribute)                     ->  Practitioner.practitioner_id       OK
+Practitioner.name (attribute)                                ->  Practitioner.name                  OK
+Practitioner.specialty (attribute)                           ->  Practitioner.specialty             OK
+class Appointment                                            ->  Appointment                        OK
+Appointment.appointment_id (attribute)                       ->  Appointment.appointment_id         OK
+Appointment.patient (attribute)                              ->  Appointment.patient                OK
+Appointment.practitioner (attribute)                         ->  Appointment.practitioner           OK
+Appointment.start (attribute)                                ->  Appointment.start                  OK
+Appointment.status (attribute)                               ->  Appointment.status                 OK
+Appointment.is_active (attribute)                            ->  Appointment.is_active              OK
+Appointment.cancel()                                         ->  def cancel                         OK
+Appointment.complete()                                       ->  def complete                       OK
+class Clinic                                                 ->  Clinic                             OK
+Clinic.register_patient(patient)                             ->  def register_patient               OK
+Clinic.register_practitioner(practitioner)                   ->  def register_practitioner          OK
+Clinic.search_patients(text)                                 ->  def search_patients                OK
+Clinic.book_appointment(patient_id, practitioner_id, start)  ->  def book_appointment               OK
+Clinic.cancel_appointment(appointment_id)                    ->  def cancel_appointment             OK
+Clinic.complete_appointment(appointment_id)                  ->  def complete_appointment           OK
+Clinic.schedule_for(practitioner_id)                         ->  def schedule_for                   OK
+Clinic.history_for(patient_id)                               ->  def history_for                    OK
+Clinic.status_report()                                       ->  def status_report                  OK
+
+43/43 UML elements present in code
